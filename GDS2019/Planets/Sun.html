@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+        <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+    </head>
+
+    <body>
+        <a-scene embedded arjs = 'sourceType: webcam; detectionMode: mono; maxDetectionRate: 30'>
+            <a-marker preset = 'hiro'>
+                <a-sphere id = "SOLE" src="https://raw.githubusercontent.com/OOBSoftInc/main/master/2k_sun.jpg" position="-0.5 0.5 0" radius="1" segments-height="128" >
+                <a-image position = "2 0.22 -0.05" scale = "2"></a-image>
+                <a-image position = "2 -0.75 -0.05" scale = "2"></a-image>
+                <a-image position = "2 -0.97 -0.05" scale = "2"></a-image>
+                </a-sphere>
+                    <a-text value = "Il Sole (dal latino: Sol) e' la stella madre del sistema solare, attorno alla quale orbitano gli otto pianeti principali (tra cui la Terra), i pianeti nani, i loro satelliti, innumerevoli altri corpi minori e la polvere diffusa per lo spazio, che forma il mezzo interplanetario. La massa del Sole rappresenta da sola il 99,86% della massa complessiva del sistema solare.
+
+                    Il Sole e' una stella di dimensioni medio-piccole costituita principalmente da idrogeno (circa il 74% della sua massa, il 92,1% del suo volume) ed elio (circa il 24-25% della massa, il 7,8% del volume), cui si aggiungono altri elementi piu' pesanti presenti in tracce." position = "0.7 0.2 0" scale = "0.6" wrapCount = "5" width="3" color = "black"></a-text>
+            </a-marker>
+        </a-scene>
+        <a-entity camera></a-entity>
+    </body>
+</html>

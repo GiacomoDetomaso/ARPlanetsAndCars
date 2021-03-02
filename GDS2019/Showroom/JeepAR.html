@@ -1,0 +1,21 @@
+<html>
+    <head>
+     	<title>JeepAR</title>
+        <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+        <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+    </head>
+
+    <body>
+        <a-scene embedded arjs='sourceType: webcam; detectionMode: mono; maxDetectionRate: 30'>
+            <a-assets>
+                <a-assets-item id = "bugatti-obj" src = "https://raw.githubusercontent.com/OOBSoftInc/3dModelsVR/master/Jeep_Renegade_2016.obj"></a-assets-item>
+                <a-assets-item id = "bugatti-mtl" src = "https://raw.githubusercontent.com/OOBSoftInc/3dModelsVR/master/Jeep_Renegade_2016.mtl"></a-assets-item>
+            </a-assets>
+            <a-marker preset = 'hiro'>
+                <a-entity scale="0.45 0.45 0.45" obj-model = "obj: #bugatti-obj; mtl:#bugatti-mtl" src = "https://raw.githubusercontent.com/OOBSoftInc/3dModelsVR/master/car_jeep_ren.jpg"></a-entity>
+            </a-marker>
+        </a-scene>
+        <a-entity camera></a-entity>
+    </body>
+<!--canvasWidth: 240; canvasHeight: 180-->
+</html>

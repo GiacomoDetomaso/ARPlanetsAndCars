@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Giornata della Scienza</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="menustyle.css" type="text/css" rel="stylesheet">
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+    <script src="change.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function openNav() {
+            document.getElementById("myNav").style.width = "270px";
+            document.getElementById("cls").style.display = "none";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+            document.getElementById("cls").style.display = "block";
+        }
+
+        function SunFunction() {
+            document.getElementById("screen").src = "Planets/Sun.html";
+        }
+
+        function SolarSystmeFunction() {
+            document.getElementById("screen").src = "Planets/ARDemo.html";
+        }
+
+        function CarFunctions() {
+            document.getElementById("screen").src = "Showroom/JeepAR.html";
+        }
+
+        function MercuryFunction() {
+            document.getElementById("screen").src = "Planets/ALL/Mercury.html";
+        }
+
+        function SaturnFunction() {
+            document.getElementById("screen").src = "Planets/ALL/Saturn.html";
+        }
+
+        function VenusFunction() {
+            document.getElementById("screen").src = "Planets/ALL/Venus.html";
+        }
+
+        function EarthFunction() {
+            document.getElementById("screen").src = "Planets/ALL/Earth.html";
+        }
+
+        function MarsFunction() {
+            document.getElementById("screen").src = "Planets//ALL/Mars.html";
+        }
+
+        function JupyterFunction() {
+            document.getElementById("screen").src = "Planets/ALL/Jupyter.html";
+        }
+
+        function UranusFunction() {
+            document.getElementById("screen").src = "Planets/ALL/Uranus.html";
+        }
+
+        function NeptuneFunction() {
+            document.getElementById("screen").src = "Planets/ALL/Neptune.html";
+        }
+
+        function funzionemoon() {
+            document.getElementById("screen").src = "Planets/ALL/Moon.html";
+        }
+
+        function ShowroomFunction() {
+            document.getElementById("screen").src = "Showroom/Showroom.html";
+        }
+    </script>
+
+</head>
+
+<body overflow="hidden">
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="left:210px">&times;</a>
+        <div class="overlay-content"><br>
+            <ul>
+                <li> <a href="#" onclick="SolarSystmeFunction()">Sistema Solare</a></li>
+                <li> <a href="#" onclick="CarFunctions()">Macchina</a></li>
+                <li> <a href="#" onclick="ShowroomFunction()">Showroom</a></li>
+                <li id="astri"><a>Astri:</a></li>
+                <ul style="padding-left:15px">
+                    <li><a href="#" onclick="SunFunction()">Sole</a></li>
+                    <li><a href="#" onclick="MercuryFunction()">Mercurio</a></li>
+                    <li><a href="#" onclick="VenusFunction()">Venere</a></li>
+                    <li><a href="#" onclick="EarthFunction()">Terra</a></li>
+                    <li><a href="#" onclick="funzionemoon()">Luna</a></li>
+                    <li><a href="#" onclick="MarsFunction()">Marte</a></li>
+                    <li><a href="#" onclick="SaturnFunction()">Saturno</a></li>
+                    <li><a href="#" onclick="JupyterFunction()">Giove</a></li>
+                    <li><a href="#" onclick="UranusFunction()">Urano</a></li>
+                    <li><a href="#" onclick="NeptuneFunction()">Nettuno</a></li>
+                </ul>
+                <li><a id="license" href="titles.html">Riconoscimenti</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header">
+        <div id="cls" class="container">
+            <div onclick="openNav()" id="cls">
+                <div class="icona"></div>
+                <div class="icona"></div>
+                <div class="icona"></div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <iframe src="Planets/ARDemo.html" id="screen"></iframe>
+    </div>
+    <div id="bot" align="center">
+        <img src="repository/logo19.png" alt="ERROR" id="logo">
+    </div>
+</body>
+
+</html>

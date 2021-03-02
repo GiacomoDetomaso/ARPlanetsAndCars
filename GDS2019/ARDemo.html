@@ -1,0 +1,54 @@
+<html>
+<head> <title>ARSolarSystem</title>
+<!-- AR.js by @jerome_etienne stolen by Jak and SWDP31- github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+</head>
+<body>
+	<a-scene embedded arjs='sourceType: webcam;'>
+	<a-marker type='pattern' patternUrl='https://github.com/OOBSoftInc/main/blob/master/GDS19.patt'>
+		<a-sphere id = "SOLE" src="https://raw.githubusercontent.com/OOBSoftInc/main/master/2k_sun.jpg" position="0 0.5 0" radius="0.8" segments-height="128" >
+		</a-sphere>
+		<a-sphere id = "placeholderTerra" color="black" position="0 0.5 0" radius="0.1" segments-height="1">
+		<a-animation attribute = "rotation" dur = "12000" to = "0 360 0" easing = "linear" repeat = "indefinite"></a-animation>
+				<a-sphere id = "placeholderLuna" position="3.10 0 0" radius="0.01" segments-height="1">
+					<a-animation attribute="rotation" dur="2000" to="0 360 0" easing="linear" repeat="indefinite"></a-animation>
+					<a-sphere id = "LUNA" src="https://raw.githubusercontent.com/OOBSoftInc/main/master/2k_moon.jpg" position="0.2 0 0" radius="0.02" segments-height="64">
+						<a-animation attribute="rotation" dur="1000" to="0 360 0" easing="linear" repeat="indefinite"></a-animation>
+					</a-sphere>
+				</a-sphere>
+				<a-sphere id = "TERRA" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg" position="3.07 0 0" radius="0.1" segments-height="64" >
+					<a-animation attribute="rotation" dur="10000" to="0 360 0" easing="linear" repeat="indefinite"></a-animation>
+				</a-sphere>
+		</a-sphere>
+	
+		<a-sphere id = "placeholderMercuzio" color="black" position="0 0.5 0" radius="0.1" segments-height="1">
+			<a-animation attribute = "rotation" dur = "4800" to = "0 360 0" easing = "linear" repeat = "indefinite"></a-animation>
+			<a-sphere id = "MERCURIO" src="https://raw.githubusercontent.com/OOBSoftInc/main/master/2k_mercury.jpg" position="1.70 0.0 0" radius="0.02" segments-height="32" >
+				<a-animation attribute="rotation"
+				dur="3000"
+				to="0 360 0"
+				easing="linear"
+				repeat="indefinite"></a-animation>
+			</a-sphere>
+		</a-sphere>
+		
+		<a-sphere id = "placeholderVenere" color="black" position="0 0.5 0" radius="0.1" segments-height="1">
+			<a-animation attribute = "rotation" dur = "9367" to = "0 360 0" easing = "linear" repeat = "indefinite"></a-animation>
+			<a-sphere id = "VENERE" src="https://raw.githubusercontent.com/OOBSoftInc/main/master/2k_venus_surface.jpg" position="2.15 0 0" radius="0.075" segments-height="64">
+				<a-animation attribute="rotation" dur="7687" fill="forwards" to="0 360 0" easing="linear" repeat="indefinite"></a-animation>
+			</a-sphere>
+		</a-sphere>
+
+		<a-sphere id = "PHDMarte" color="black" position="0 0.5 0" radius="0.1" segments-height="1">
+			<a-animation attribute = "rotation" dur = "12999" to = "0 360 0" easing = "linear" repeat = "indefinite"></a-animation>
+			<a-sphere id = "MARTE" src="https://raw.githubusercontent.com/OOBSoftInc/main/master/2k_mars.jpg" position="3.5 0 0" radius="0.075" segments-height="64">
+				<a-animation attribute="rotation" dur="10001" fill="forwards" to="0 360 0" easing="linear" repeat="indefinite"></a-animation>
+			</a-sphere>
+		</a-sphere>
+
+		</a-marker>
+		<a-entity camera></a-entity>
+	</a-scene>
+</body>
+</html>

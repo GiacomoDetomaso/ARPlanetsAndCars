@@ -1,0 +1,197 @@
+.icona {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    position: relative;
+    cursor: pointer;
+
+
+   -webkit-transition: background-color;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-in;
+
+
+
+   -moz-transition: background-color;
+    -moz-transition-duration: 0.5s;
+    -moz-transition-timing-function: ease-in;
+
+
+
+   -ms-transition: background-color;
+    -ms-transition-duration: 0.5s;
+    -ms-transition-timing-function: ease-in;
+
+
+
+   -o-transition: background-color;
+    -o-transition-duration: 0.5s;
+    -o-transition-timing-function: ease-in;
+   }
+
+
+
+   .header{
+    position: relative;
+    width: 5%;
+    height: 3%;
+    background: fixed no-repeat center;
+    background-size: cover;
+    background-image: url("temporale.jpg");
+    }
+
+
+
+   .trasparenza{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    opacity: 0.6;
+    -webkit-transition: opacity;
+    -webkit-transition-duration: 1.5s ;
+    -webkit-transition-timing-function: easy-in;
+    -moz-transition: opacity;
+    -moz-transition-duration: 1.5s ;
+    -moz-transition-timing-function: easy-in;
+    -ms-transition: opacity;
+    -ms-transition-duration: 1.5s ;
+    -ms-transition-timing-function: easy-in;
+    -o-transition: opacity;
+    -o-transition-duration: 1.5s ;
+    -o-transition-timing-function: easy-in;
+    }
+
+
+
+   .trasparenza:hover{
+    opacity: 0.4;
+    }
+
+
+
+   .container{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border-radius: 100%;
+    padding:1%;
+    width:35px;
+    -webkit-transition: border-color,border-radius,padding,margin;
+    -webkit-transition-duration: 0.5s,1s,1s,1s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition: border-color,border-radius,padding,margin;
+    -moz-transition-duration: 0.5s,1s,1s,1s;
+    -moz-transition-timing-function: ease-out;
+    -ms-transition: border-color,border-radius,padding,margin;
+    -ms-transition-duration: 0.5s,1s,1s,1s;
+    -ms-transition-timing-function: ease-out;
+    -o-transition: border-color,border-radius,padding,margin;
+    -o-transition-duration: 0.5s,1s,1s,1s;
+    -o-transition-timing-function: ease-out;
+   }
+
+
+
+   .container:hover{
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    border-radius:5%;
+    border-color:rgb(255, 255, 255);
+    padding:0.5%;
+   }
+
+
+
+   .container:hover .icona{
+    background-color:white;
+   }
+
+
+
+   .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+   }
+
+
+
+   .overlay-content {
+    position: relative;
+    top: 5%;
+    width: 50%;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: -30px;
+    float: left;
+   }
+
+
+
+   .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+   }
+#astri{
+    text-decoration: none;
+}
+
+
+   .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+   }
+
+
+
+   .overlay .closebtn {
+    position: absolute;
+    top: 8px;
+    left: 210px;
+    font-size: 40px;
+	  color:white;
+   }
+
+
+
+   @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+   }
+
+ul{
+    margin-left:10px;
+    margin-right:auto;
+}
+
+   .titolo {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 48px;
+   }
+   
+   #license{
+   font-size:20px;
+   color:grey;
+    text-decoration: none;
+   }

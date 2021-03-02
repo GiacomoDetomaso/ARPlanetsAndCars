@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+        <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+    </head>
+    <body>
+        <a-scene embedded arjs = 'sourceType: webcam; detectionMode: mono; maxDetectionRate: 30'>
+            <a-marker preset = 'hiro'>
+                <a-entity rotation = "90 0 0"> 
+                        <a-ring id = "SaturnRings" src = "https://raw.githubusercontent.com/OOBSoftInc/main/master/ringSat.png" radius-inner = "1" radius-outer="2" material = "side: double" segments-height="64" position="-0.5 0.5 0">
+                            
+                            <a-entity rotation = "90 0 0"> 
+                                    <a-sphere id = "Saturn" radius = "0.8"  src = "https://raw.githubusercontent.com/OOBSoftInc/main/master/2k_saturn.jpg" segments-height="64"></a-sphere>
+                            </a-entity>                        
+                             
+                            
+                        </a-ring>
+                </a-entity>
+                <a-text value = "Saturno e' il sesto pianeta del sistema solare in ordine di distanza dal Sole e il secondo pianeta più massiccio dopo Giove. Con un raggio medio 9,5 volte quello della Terra e una massa 95 volte superiore a quella terrestre Saturno, con Giove, Urano e Nettuno, e' classificato come gigante gassoso. Il nome deriva dall'omonimo dio della mitologia romana, omologo del titano greco Crono. Il suo simbolo astronomico (♄Saturn symbol.svg) è una rappresentazione stilizzata della falce del dio dell'agricoltura e dello scorrere del tempo (in greco, Κρόνος).
+                                 Saturno e' composto per il 95% da idrogeno e per il 3% da elio a cui seguono gli altri elementi. Il nucleo, consistente in silicati e ghiacci, e' circondato da uno spesso strato di idrogeno metallico e quindi di uno strato esterno gassoso."
+                                 position = "1.9 0.15 0.15" scale = "0.8" wrapCount = "5" width="3" color = "black">
+                </a-text>
+                <a-image position = "3.1 -0. 0" height = "2.8" width = "3" color = "white"></a-image>
+            </a-marker>
+        </a-scene>
+        <a-entity camera></a-entity>
+    </body>
+</html>
