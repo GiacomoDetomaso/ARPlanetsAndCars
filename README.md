@@ -3,5 +3,5 @@ A school project with argumented reality, using [AFRAME](https://aframe.io/) and
 
 ### ROLES:
 
-AR Code and 3D Models: [**Giacomo Detomaso**](https://github.com/JakDet) and [**Michelangelo De Pascale**](https://github.com/MichelangeloDePascale02)
-Graphics and pages' behavior : [**Gianluigi Palmisano**](https://github.com/Gianlu01k)
+- AR Code and 3D Models: [**Giacomo Detomaso**](https://github.com/JakDet) and [**Michelangelo De Pascale**](https://github.com/MichelangeloDePascale02)
+- Graphics and pages' behavior : [**Gianluigi Palmisano**](https://github.com/Gianlu01k)
