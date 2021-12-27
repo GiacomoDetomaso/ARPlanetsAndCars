@@ -16,11 +16,10 @@ Here is a picture of the solar system page (we tried to scale the planets, so th
 ![title](DemoPic/solarsystem.png)
 Saturn:
 ![title](DemoPic/saturn.png)
-And a jeep!: 
+And a jeep: 
 ![title](DemoPic/jeep.png)
 
 # Credits
-
 
 - AR Code and 3D Models: [**Giacomo Detomaso**](https://github.com/JakDet) and [**Michelangelo De Pascale**](https://github.com/MichelangeloDePascale02)
 - Graphics and pages' behavior : [**Gianluigi Palmisano**](https://github.com/Gianlu01k)
