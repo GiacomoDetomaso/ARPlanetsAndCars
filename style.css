@@ -11,7 +11,7 @@ html{
 }
 
 body{
-	background-image: url(repository/background.jpg);
+	background-image: url(res/background.jpg);
 	background-attachment:scroll;
 	background-size: cover;
 	font-family: gfont, Verdana, sans-serif;
@@ -57,7 +57,7 @@ body{
 	background-color: white;
 	border-radius: 20px;
 	margin-bottom: 20px;
-    margin-top:40px;
+    margin-top:20px;
 	height:100%;
 }
 

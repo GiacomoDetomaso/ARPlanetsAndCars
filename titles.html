@@ -1,79 +1,75 @@
 <html>
-<head>
-<link href="menustyle.css" type="text/css" rel="stylesheet">
-<script type="text/javascript">
-				function openNav() {
-				 document.getElementById("myNav").style.width = "270px";
-				 document.getElementById("cls").style.display="none";				}
-				function closeNav() {
-				 document.getElementById("myNav").style.width = "0%";
-				 document.getElementById("cls").style.display="block";
-				}
 
-				</script>
+<head>
+	<link href="menustyle.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript">
+		function openNav() {
+			document.getElementById("myNav").style.width = "270px";
+			document.getElementById("cls").style.display = "none";
+		}
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+			document.getElementById("cls").style.display = "block";
+		}
+
+	</script>
 </head>
 <style>
-@font-face {
-   font-family: 'gfont';
-   src: url('gfont.ttf') format('truetype');
-}
+	@font-face {
+		font-family: 'gfont';
+		src: url('res/gfont.ttf') format('truetype');
+		color: yellow;
+	}
 
-body{font-size:50px;
-margin-bottom:0px;
-margin-top:auto;
-font-family: gfont, Verdana, sans-serif;
-background-image: url(repository/background.jpg);
-	background-attachment:scroll;
-	background-size: cover;
-	color:yellow;
-}
+	body {
+		font-size: 50px;
+		margin-bottom: 0px;
+		margin-top: auto;
+		font-family: gfont, Verdana, sans-serif;
+		background-image: url(res/background.jpg);
+		background-attachment: scroll;
+		background-size: cover;
+		color: yellow;
+	}
 
-marquee{
-margin-right:
-}
+	marquee {
+		margin: right
+	}
 </style>
+
 <body align="center">
-<div id="myNav" class="overlay">
-				 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"  style="left:210px">&times;</a>
-				 <div class="overlay-content"><br>
-					 <ul>
-						 <li> <a href="https://ittdellerbagds.altervista.org" style="text-decoration:none; font-size:40px;"><-INDIETRO</a></li>
-				</ul>
-				 </div>
-				</div>
-				<div class="header">
-				<div  id="cls" class="container">
+	<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="left:210px">&times;</a>
+		<div class="overlay-content"><br>
+			<ul>
+				<li> <a href="index.html" style="text-decoration:none; font-size:40px;">
+						<-INDIETRO< /a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="header">
+		<div id="cls" class="container">
 
-<div onclick="openNav()" id="cls">
-				 <div class="icona"></div>
-				 <div class="icona"></div>
-				 <div class="icona"></div>
-				</div>
-				</div>
-				</div>
+			<div onclick="openNav()" id="cls">
+				<div class="icona"></div>
+				<div class="icona"></div>
+				<div class="icona"></div>
+			</div>
+		</div>
+	</div>
 
-<marquee
-  loop="-1"
-  scrollamount="5"
-  scrolldelay="20"
-  direction="up"
-  height="100%"
-  width="60%"
-  align="center"
->
-<i>ITT LUIGI DELL'ERBA<br><br>
-CASTELLANA GROTTE (BA)<br><br>
-GIORNATA DELLA SCIENZA 2019<br><br>
-PROGETTO REALTA' AUMENTATA:<br><br>
-GIACOMO DETOMASO<br><br>
-MICHELANGELO DE PASCALE<br><br>
-GIANLUIGI PALMISANO<br><br>
-PROGETTO STAMPANTE 3D:<br><br>
-ALESSANDRO CURSOLI<br><br>
-PIERO RENNA<br><br>
-</i><br><br>
+	<marquee loop="-1" scrollamount="5" scrolldelay="20" direction="up" height="100%" width="60%" align="center">
+		<i>
+			GDS2K19<br><br>
+			PROGETTO REALTA' AUMENTATA:<br><br>
+			GIACOMO DETOMASO<br><br>
+			MICHELANGELO DE PASCALE<br><br>
+			GIANLUIGI PALMISANO<br><br>
+		</i><br><br>
 
-<img src="repository/logo19.png" alt="ERROR" id="logo" style="border-radius:30px">
-</marquee>
+		<img src="res/logo19.png" alt="ERROR" id="logo" style="border-radius:30px">
+	</marquee>
 </body>
+
 </html>
